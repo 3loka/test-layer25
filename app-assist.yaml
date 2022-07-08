@@ -1,0 +1,16 @@
+version: v1
+type: layer
+name: Service
+configuration:
+  topics: ["java", "test"]
+  apps: ["azure-oidc"]
+  extensions: ["gh-azure-oidc"]
+  workflow: "hello-world-input.yaml"
+secrets:
+  secret1:
+    description: desc
+    required: yes
+#     environment: test
+  secret2:
+    description: desc
+    required: yes
